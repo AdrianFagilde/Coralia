@@ -20,17 +20,34 @@
 	<!-- font-family: 'Open Sans', sans-serif; -->
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 	<!-- font-family: 'Barlow-bold', sans-serif; -->
-	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 	<header class="barra_ampliada cabecera">
 		<nav class="navbar-fixed-top">
-			<div class="form1"></div>
-			<div class="total-menu">
+			<div class="form1 absolute animation"></div>
+			<div class="total-menu animation">
 				<div class="navbar-header animation">
-					<img src="images/Logotipo/Logotipo_Coralia_Matín.png" alt="" class="form_logo animation">
+					<img src="images/Logotipo/Logotipo_Coralia_Matín.png" alt="" class="form_logo animation absolute">
 				</div>
+				<ul class="animation nav navbar-nav navbar-right centrado">
+					<li>
+						<a href="#" class="centrado link">
+							<span><img src="images/Iconos/telefono_2.svg" alt=""></span>
+							<em>+34</em> <strong>690167507</strong>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="centrado link text-uppercase">
+							<span><img src="images/Iconos/correo_2.svg" alt=""></span>
+							<em>info@</em><strong>coraliamatin.com</strong>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="navbar-toggle collapsed right-toggle"><img src="images/Iconos/menu.svg" alt=""></a>
+					</li>
+				</ul>
 			</div>
 		</nav>
 	</header>
@@ -265,6 +282,39 @@
 		</a>
 	</section>
 
+	<div class="sidebar-wrapper centrado right animation">
+		<a href="#" class="sidebar-logo">
+			<span><img class="simbolo-logo" src="images/Logotipo/Logotipo_Coralia Matín_Blanco.png" alt=""></span>
+		</a>
+		<ul class="sidebar-nav list-unstyled">
+			<li><a class="text-uppercase text-center centrado" href="#">Portada</a></li>
+			<li><a class="text-uppercase text-center centrado" href="#">sobre mí</a></li>
+			<li><a class="text-uppercase text-center centrado" href="#">servicios</a></li>
+			<li><a class="text-uppercase text-center centrado" href="#">atención temprana</a></li>
+			<li><a class="text-uppercase text-center centrado" href="#">asesoría</a></li>
+			<li><a class="text-uppercase text-center centrado" href="#">FAQ</a></li>
+			<li><a class="text-uppercase text-center centrado" href="#">Contacto</a></li>
+		</ul>
+	</div>
+		<div id="manto-movil">
+			<div class="opacidad full"></div>
+			<div class="relative">
+				<h2 class="titulo text-center test-uppercase visible-lg">
+					Disfruta de un lugar <br>tranquilo
+				</h2>
+				<div class="hl"></div>
+				<div class="enlaces">
+					<a href="#" class="centrado link">
+						<span><img src="images/Iconos/telefono_2.svg" alt=""></span>
+						<em>+34</em> <strong>690167507</strong>
+					</a>
+					<a href="#" class="centrado link text-uppercase">
+						<span><img src="images/Iconos/correo_2.svg" alt=""></span>
+						<em>info@</em><strong>coraliamatin.com</strong>
+					</a>
+				</div>
+			</div>
+		</div>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
