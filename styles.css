@@ -225,29 +225,50 @@ nav .total-menu {
 
 #manto-movil .titulo {
     color: #FFF;
-    font-size: 55px;
-    line-height: 60px;
-    max-width: 800px;
+    line-height: 70px;
+    font-size: 70px;
     margin-top: 0;
-    margin-bottom: 60px;
-}
-
-#manto-movil .titulo span {
-    font-weight: 400;
-    color: var(--secundario);
+    font-weight: 300;
 }
 
 #manto-movil .enlaces {
     display: flex;
+    justify-content: center;
     gap: 30px;
 }
 
 #manto-movil .hl {
+    margin: 40px auto 30px;
     background-color: #FFF;
     height: 2px;
     width: 100%;
     max-width: 628px;
     opacity: 0.5;
+}
+
+#manto-movil a.link {
+    border: 1px solid #FFF;
+    background-color: transparent;
+    border-radius: 32px;
+    padding: 7px 20px 7px 7px;
+    display: inline-flex;
+    color: #FFF;
+    font-family: "Barlow";
+    height: 64px;
+    font-size: 20px;
+}
+
+#manto-movil a.link span {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #f3c4c3;
+    margin-right: 15px;
+}
+
+#manto-movil a.link span img {
+    width: 100%;
+    padding: 8px;
 }
 
 /* ******* */
@@ -272,6 +293,20 @@ nav .total-menu {
 
 .toggled .sidebar-wrapper {
     right: 0;
+}
+
+.sidebar-wrapper .volver {
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    border: 1px solid #FFF;
+    top: 35px;
+    right: 35px;
+    cursor: pointer;
+}
+
+.sidebar-wrapper .volver img {
+    padding: 15px;
 }
 
 img.simbolo-logo {
@@ -905,6 +940,10 @@ img.simbolo-logo {
 
 
 @media (max-width:1200px) {
+    .cabecera .form_logo {
+        width: 320px;
+    }
+    
     .bloqueInformacion .titulo {
         font-size: 40px;
     }
@@ -970,13 +1009,21 @@ img.simbolo-logo {
     }
 }
 @media (max-width: 992px) {
-
     /* *** */
     /* Nav */
     /* *** */
-    .cabecera.barra_reducida .navbar-header,
-    .cabecera.barra_ampliada .navbar-header {
+    .barra_reducida .total-menu,
+    .barra_ampliada .total-menu {
         height: 90px;
+    }
+
+    .barra_ampliada .form1 {
+        height: 99px;
+    }
+
+    .navbar-right {
+        float: right;
+        margin: 0;
     }
     .banner .facebook,
     .banner .instagram {
@@ -1079,6 +1126,15 @@ img.simbolo-logo {
         width: 100%;
         height: 230px;
     }
+
+    .sidebar-wrapper {
+        width: 320px;
+        padding-bottom: 50px;
+    }
+
+    img.simbolo-logo {
+        width: 80%;
+    }
 }
 @media (max-width: 500px) {
     .bloqueInformacionAa .img-container img {
@@ -1096,10 +1152,6 @@ img.simbolo-logo {
     .bloqueInformacionAa .parrafo {
         text-align: justify;
         font-size: 14px;
-    }
-
-    .sidebar-wrapper {
-        width: 320px;
     }
 
     /* .bloqueInformacionAa .simbolo{
