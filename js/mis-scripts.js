@@ -67,13 +67,12 @@ $('.right-toggle').on('click', function(e) {
     toggleSidebar("right");
 });
 
-$('#manto-movil').on('click', function(e) {
+$('.volver').on('click', function(e) {
     if($("#menu-lateral").hasClass("toggle-right")) {
         toggleSidebar("right");
     } else if( $("#menu-lateral").hasClass("toggle-left") ){
         toggleSidebar("left");
     }
-    
 });
 
 document.addEventListener( 'DOMContentLoaded', function () {
