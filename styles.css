@@ -493,13 +493,17 @@ img.simbolo-logo {
 
 .bloqueInformacion {
     background-repeat: no-repeat;
-    background-position: -50%;
-    background-size: cover;
     padding-top: 210px;
     padding-bottom: 210px;
     display: flex;
     align-items: center;
 
+}
+.bloqueInformacionAa{
+    background-size: cover;
+}
+.bloqueInformacionBb{
+    background-size: contain;
 }
 
 .bloqueInformacion .titulo {
@@ -529,12 +533,13 @@ img.simbolo-logo {
 .bloqueInformacionAa .opacidad {
     background-color: #faf8f7;
     opacity: 0.89;
-    margin: 0;
+    top: 0;
 }
 
 
 .bloqueInformacionAa .gradiente {
     position: absolute;
+    top: 0;
     background-image: linear-gradient(to right, #fff 41%, transparent);
     height: 100%;
     width: 100%;
@@ -703,9 +708,6 @@ img.simbolo-logo {
     border-radius: 25px;
 }
 
-.serviciosAb .thumbnail:hover .img-container {
-
-}
 
 .serviciosAb .img-container>.img {
     object-fit: cover;
@@ -727,9 +729,6 @@ img.simbolo-logo {
     width: 45%;
 }
 
-.serviciosAb .thumbnail:hover .img-container>.capa {
-    opacity: 0.3;
-}
 
 .serviciosAb .thumbnail {
     position: relative;
@@ -762,16 +761,21 @@ img.simbolo-logo {
 
 .serviciosAb .thumbnail .caption {
     position: absolute;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
     background: white;
     width: 90%;
     padding: 20px 30px 30px 30px;
     left: 50%;
-    top:390px;
+    bottom:-63px;
     transform: translateX(-50%);
     border-radius: 25px;
     border: solid 1px #a27b59;
     filter: drop-shadow(0 0 10px rgba(0,0,0,0.15));
     height: 215px;
+    transition:height  ease 0.5s;
 }
 .serviciosAb .thumbnail .caption {
     box-shadow:  0 0 0 5px #fff,
@@ -779,12 +783,21 @@ img.simbolo-logo {
 }
 
 .serviciosAb .thumbnail:hover .caption{
-    top: 100px;
-    height: 500px;
+    height: 550px;
 }
 .serviciosAb .thumbnail:hover .caption a{
+    
     overflow: hidden;
 }
+.serviciosAb .thumbnail .caption .texto-oculto {
+    height: 0;
+    overflow: hidden;
+}
+.serviciosAb .thumbnail:hover .caption .texto-oculto{
+    height: 300px;
+}
+
+
 .serviciosAb #serviciosAb-track{
     height: 700px;
 }
