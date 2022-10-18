@@ -863,6 +863,7 @@ img.simbolo-logo {
 .bloqueInformacionCc #proceso{
     display: flex;
     height: 500px;
+    justify-content: space-between;
 }
 
 .bloqueInformacionCc #informacion{
@@ -880,19 +881,13 @@ img.simbolo-logo {
     border-radius: 100px;
     background-color: #ffffff;
     border: 1px solid #f07379;
-    margin-left: 51px;
     z-index: 1;
+    transition: height ease 0.3s;
 
 }
 .bloqueInformacionCc .form1:hover {
-    display: block;
-    width: 248px;
     height: 451px;
     border-radius: 100px 100px 30px 30px;
-    background-color: #ffffff;
-    border: 1px solid #f07379;
-    margin-left: 51px;
-    z-index: 1;
 }
 
 .bloqueInformacionCc .form1 p{
@@ -919,27 +914,29 @@ img.simbolo-logo {
     font-style: italic;
     font-family: "Barlow";
     text-align: center;
+    margin-top: 30px;
+    transition: margin ease 0.3s;
+}
+
+.bloqueInformacionCc .form1:hover p {
+    margin-top: -20px;
 }
 
 .bloqueInformacionCc .form1 img{
     object-fit: contain;
-    width: 50%;
-    height: 50%;
-    margin-top: 50px;
-    margin-bottom: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 1;
-
+    width: 100%;
+    padding: 55px;
 }
 
-.bloqueInformacionCc .form1:hover img{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5px;
-    margin-bottom: 1px;
+.bloqueInformacionCc .form1 .texto-oculto {
+    height: 0;
+    overflow: hidden;
 }
 
+.bloqueInformacionCc .form1:hover .texto-oculto {
+    transition: height ease 0.5s;
+    height: 110px;
+}
 
 .bloqueInformacionCc .line{
     position: absolute;
