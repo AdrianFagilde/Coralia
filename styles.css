@@ -875,7 +875,6 @@ img.simbolo-logo {
 }
 .bloqueInformacionCc #proceso{
     display: flex;
-    height: 500px;
     justify-content: space-between;
 }
 
@@ -904,20 +903,7 @@ img.simbolo-logo {
 }
 
 .bloqueInformacionCc .form1 p{
-    width: 248px;
-    height: 65px;
-    font-size: 24px;
-    letter-spacing: 1px;
-    line-height: 24px;
-    color: #47af9f;
-    font-weight: bold;
-    font-style: italic;
-    font-family: "Barlow";
-    text-align: center;
-}
 
-.bloqueInformacionCc .form1 p{
-    width: 248px;
     height: 65px;
     font-size: 24px;
     letter-spacing: 1px;
@@ -926,7 +912,6 @@ img.simbolo-logo {
     font-weight: bold;
     font-style: italic;
     font-family: "Barlow";
-    text-align: center;
     margin-top: 30px;
     transition: margin ease 0.3s;
 }
@@ -1052,7 +1037,6 @@ img.simbolo-logo {
         width: 200px;
         height: 200px;
         border-radius: 80px;
-        margin-left: 25px;
     }
 
     .bloqueInformacionCc .line{
@@ -1168,7 +1152,8 @@ img.simbolo-logo {
         margin-bottom: 100px;
     }
     .bloqueInformacionCc #proceso{
-        display: block;    
+        display: flex;
+        flex-direction: column;    
     }
 
     .bloqueInformacionCc .form1{
@@ -1176,13 +1161,11 @@ img.simbolo-logo {
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 20px;
-        z-index: 4;
     }
 
     .bloqueInformacionCc .form1 img{
         margin-right: auto;
         margin-left: auto;
-        z-index: 4;
     }
 
     .bloqueInformacionCc .line{
