@@ -704,8 +704,7 @@ img.simbolo-logo {
 }
 
 .serviciosAb .thumbnail:hover .img-container {
-    height: 55%;
-    overflow: hidden;
+
 }
 
 .serviciosAb .img-container>.img {
@@ -776,7 +775,15 @@ img.simbolo-logo {
 }
 .serviciosAb .thumbnail .caption {
     box-shadow:  0 0 0 5px #fff,
-                 0 0 0 6px #a27b59;
+    0 0 0 6px #a27b59;
+}
+
+.serviciosAb .thumbnail:hover .caption{
+    top: 100px;
+    height: 500px;
+}
+.serviciosAb .thumbnail:hover .caption a{
+    overflow: hidden;
 }
 .serviciosAb #serviciosAb-track{
     height: 700px;
@@ -982,7 +989,7 @@ img.simbolo-logo {
 
 
 
-@media (max-width:1200px) {
+@media (max-width:1229px) {
     .cabecera .form_logo {
         width: 320px;
     }
@@ -1029,6 +1036,19 @@ img.simbolo-logo {
     .bloqueInformacionBb .simbolo{
         left: calc(-30% - 20px);
         height: 980px;
+    }
+
+    .bloqueInformacionCc .form1{
+        width: 200px;
+        height: 200px;
+        border-radius: 80px;
+        margin-left: 25px;
+    }
+
+    .bloqueInformacionCc .line{
+        position: absolute;
+        top: 100px;
+        left: 15%;
     }
 }
 @media (max-width: 992px) {
@@ -1146,6 +1166,12 @@ img.simbolo-logo {
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 20px;
+        z-index: 4;
+    }
+
+    .bloqueInformacionCc .form1 img{
+        margin-right: auto;
+        margin-left: auto;
         z-index: 4;
     }
 
