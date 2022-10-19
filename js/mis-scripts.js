@@ -80,7 +80,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
 
     if ( $( "#banner-slider" ).length ) {
         new Splide( '#banner-slider', {
-            // autoplay: true,
+            autoplay: true,
             interval: 5000,
             type: "fade",
             rewind: true,
@@ -112,7 +112,6 @@ document.addEventListener( 'DOMContentLoaded', function () {
             pagination: false,
             gap: '30px',
             speed: 800,
-            padding: { left: 10, right: 10 },
             breakpoints: {
                 1200: {
                     perPage: 3,
@@ -120,7 +119,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
                 992: {
                     perPage: 2,
                 },
-                600: {
+                768: {
                     perPage: 1,
                 },
             },
